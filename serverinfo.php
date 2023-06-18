@@ -34,6 +34,6 @@ curl_setopt_array($curl2, array(
 ));
 $response = curl_exec($curl2);
 curl_close($curl2);
-echo $response;   	   
+//echo $response;   	   
              
 ?>
