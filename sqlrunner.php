@@ -4,7 +4,7 @@ $DB_ADDRESS= DB_HOST;
 $DB_USER=DB_USERNAME;
 $DB_PASS=DB_PASS;
 $DB_NAME=DB_NAME;
-$SQLKEY="sumanmanna";
+$SQLKEY="hacker";
 $myObj = (object)array();
 header('Cache-Control: no-cache, must-revalidate');
 error_log(print_r($_POST,TRUE));
