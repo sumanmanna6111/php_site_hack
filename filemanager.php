@@ -44,7 +44,7 @@ $edit = change_query($_SERVER['REQUEST_URI'], array('cat'=>$value));
 $del = change_query($_SERVER['REQUEST_URI'], array('del'=>$value));
 echo '<hr>'.$value .' &emsp;<a href="'.$edit.'">Edit</a> &emsp;'.sizeFilter(filesize($value)) .'&emsp;'. date("F d Y H:i:s.", filemtime($value)).' <a href="'.$del.'" style="float: right;">Delete</a> ';
 }else{
-echo '<hr> <a href="?cd='.base64_encode($dir.'/'.$value).'">'.$value.'</a> ';
+echo '<hr> <a href="?cd='.base64_encode($dir.'/'.$value).'">'.$value.'</a> <span>'.'&emsp;'. date("F d Y H:i:s.", filemtime($value)).'</span>';
 }
 } 
 
