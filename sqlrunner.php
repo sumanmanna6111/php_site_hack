@@ -9,7 +9,7 @@ $myObj = (object)array();
 header('Cache-Control: no-cache, must-revalidate');
 error_log(print_r($_POST,TRUE));
 if( isset($_POST['query']) && isset($_POST['key']) ){
-  header('Content-type: text/csv');
+  header('Content-type: application/json');
   if($_POST['key']==$SQLKEY){ 
     $query=urldecode($_POST['query']);
     $conn = new mysqli($DB_ADDRESS,$DB_USER,$DB_PASS,$DB_NAME);
